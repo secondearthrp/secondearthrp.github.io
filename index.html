@@ -3,7 +3,139 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Second Earth</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<h1>Welcome to <span class="blue">Second Earth</span>.</h1>
+		<div id="sans-serif-toggle">
+			<button id="sans-serif-toggle-button" onclick="toggleFont()">
+				<i class="fa-solid fa-font"></i>Toggle sans-serif font
+			</button>
+		</div>
+
+		<p>Please use the navigation tree below to find what you need.</p>
+
+		<ul class="tree">
+			<li class="expandable">
+				<p>Government</p>
+				<ul>
+					<li class="expandable">
+						<p>Diplomacy</p>
+						<ul>
+							<li class="expandable">
+								<p>Nation alliances</p>
+								<ul>
+									<li class="expandable">
+										<p>What are nation alliances?</p>
+										<ul>
+											<li>
+												A nation alliance is a group of two or more nations
+												affiliated with one another.
+											</li>
+											<li>
+												Members of an alliance might share resources, or offer
+												each other military and/or financial help in wars or
+												after disasters.
+											</li>
+										</ul>
+									</li>
+
+									<li class="expandable">
+										<p>How are nation alliances formed?</p>
+										<ul>
+											<li>
+												Nation alliances are formed in the #diplomacy channel,
+												usually in a thread.
+											</li>
+											<li>
+												Alliances are usually organised by world leaders or
+												other high-ranking members of the government, who may
+												then make a statement in the #leader-statements channel.
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="expandable">
+						<p>Leader statements</p>
+						<ul>
+							<li class="expandable">
+								<p>What warrants a leader statement?</p>
+								<ul>
+									<li>
+										World leaders will usually make speeches and announcements
+										in response to world events, like wars, alliance formations
+										and natural disasters.
+									</li>
+									<li>
+										Leader statements are generally long-form posts, often
+										include an attached image, and are often frequent in nature,
+										much like statements from real-life world leaders.
+									</li>
+								</ul>
+							</li>
+
+							<li class="expandable">
+								<p>Where are leader statements made?</p>
+								<ul>
+									<li>
+										Leader statements are made in the #leader-statements
+										channel.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li class="expandable collapsed">
+				<p>Time</p>
+				<ul>
+					<li class="expandable collapsed">
+						<p>What time is it?</p>
+						<ul>
+							<li>
+								The server time can be viewed on the
+								<a href="clock" rel="noopener noreferrer" target="_blank"
+									>clock</a
+								>
+								page.
+							</li>
+						</ul>
+					</li>
+
+					<li class="expandable collapsed">
+						<p>How does time work?</p>
+						<ul>
+							<li>
+								Time in Second Earth is based off the real UNIX time, starting
+								on March 10, 2124, and progresses about 4 times (4.2857 to be
+								exact) faster than real time.
+							</li>
+							<li>
+								This means that one real-life week is approximately one Second
+								Earth month.
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<script src="time.js"></script>
+		<script src="tree.js"></script>
+        <script src="font.js"></script>
+	</body>
 </html>
