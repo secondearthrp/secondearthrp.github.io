@@ -9,14 +9,14 @@
 }
 
 @font-face {
-    font-family: "Outfit Light";
-    src: url("assets/fonts/Outfit-Light.otf") format("opentype");
+	font-family: "Outfit Light";
+	src: url("assets/fonts/Outfit-Light.otf") format("opentype");
 }
 
 :root {
 	--wsa-blue: #0b3d91;
 	--white: #fcfcfc;
-    --body-font: "Iosevka Regular", monospace;
+	--body-font: "Iosevka Regular", monospace;
 }
 
 body {
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "LT Institute", monospace;
+	font-family: "LT Institute", monospace;
 }
 
 .blue {
@@ -46,111 +46,137 @@ h6 {
 }
 
 .box {
-    background-color: var(--wsa-blue);
-    color: var(--white);
-    padding: 0.25ch 0.5ch;
+	background-color: var(--wsa-blue);
+	color: var(--white);
+	padding: 0.25ch 0.5ch;
 }
 
 .tree {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 .tree li p {
-    display: flex;
-    align-items: center;
-    margin: 5px auto;
-    cursor: pointer;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	cursor: pointer;
+	line-height: 1.8em;
+	padding: 0.25em 0.5em;
+	transition: background-color 0.1s ease, padding 0.1s ease;
+}
+
+.tree li p:hover {
+	background-color: var(--wsa-blue);
+	color: var(--white);
+	padding-left: 2ch;
+}
+
+.tree li p:hover::before {
+	color: var(--white);
 }
 
 .tree li > * {
-    transition: 0.1s ease;
-    overflow: hidden;
+	transition: 0.2s ease !important;
+	overflow: hidden;
+}
+
+.tree li.collapsed li {
+	border: none !important;
 }
 
 .tree li p::before {
-    content: "\f107";
-    font-size: 0.5em;
-    font-family: FontAwesome;
-    color: var(--wsa-blue);
-    margin-right: 1.5ch;
-    transition: 0.3s ease;
+	content: "\f107";
+	font-size: 0.5em;
+	font-family: FontAwesome;
+	color: var(--wsa-blue);
+	margin-right: 1.5ch;
+	transition: 0.2s ease;
 }
 
 .tree li::marker {
-    transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
 .tree li.expandable::marker {
-    content: "";
+	content: "";
 }
 
 .tree li.collapsed > p::before {
-    transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
 
 .tree li.collapsed > ul,
-.tree li.collapsed > * * {
-    font-size: 0 !important;
-    /* line-height: 0 !important; */
-    margin: 0 !important;
+.tree li.collapsed > * *,
+.tree li.collapsed > li::before {
+	font-size: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	/* line-height: 0 !important; */
 }
 
 ul {
-    padding-left: 4ch;
+	padding-left: 4ch;
 }
 
-li.expandable {
-    margin-bottom: 8px;
+.tree li.expandable {
+	border-left: 1px solid var(--wsa-blue);
+	margin: 0;
+}
+
+.tree li {
+	margin: 10px 0;
 }
 
 a {
-    color: var(--wsa-blue);
-    cursor: pointer;
-    opacity: 0.8;
-    text-decoration: none;
+	color: var(--wsa-blue);
+	cursor: pointer;
+	opacity: 0.8;
+	text-decoration: none;
 }
 
 button {
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
-    background-color: var(--wsa-blue);
-    color: var(--white);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    font-family: var(--body-font);
-    margin: 10px 0;
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	background-color: var(--wsa-blue);
+	color: var(--white);
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	font-family: var(--body-font);
+	margin: 10px 0;
 }
 
 #time-dow,
 #time-day,
 #time-month,
 #time-year {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 #clock-display {
-    font-family: "Iosevka Regular" !important;
-    font-size: 1.5em;
+	font-family: "Iosevka Regular" !important;
+	font-size: 1.5em;
 }
 
 #clock {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 20px;
-    flex-direction: column;
-    font-size: 4vw;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 20px;
+	flex-direction: column;
+	font-size: 4vw;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-#clock p { 
-    margin: 0;
-} 
+#clock p {
+	margin: 0;
+}
