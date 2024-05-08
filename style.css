@@ -180,3 +180,17 @@ button {
 #clock p {
 	margin: 0;
 }
+
+section {
+	margin-top: 50px;
+}
+
+ol li::marker {
+	color: var(--wsa-blue);
+	font-weight: bold;
+}
+
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
