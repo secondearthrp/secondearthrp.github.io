@@ -10,7 +10,7 @@
 	<body>
 		<h1>Second Earth Clock</h1>
 
-		<div id="clock">
+		<!-- <div id="clock">
 			<p>
 				It's
 				<span id="time-dow"></span> the <span id="time-day"></span> of
@@ -23,6 +23,30 @@
 				:
 				<span id="clock-second" class="box">00</span>
 			</p>
+		</div> -->
+
+		<div id="time-container">
+			<div id="calendar">
+				<div id="calendar-top">
+					<p id="calendar-top-text"><span id="time-month"></span> <span id="time-year"></span></p>
+				</div>
+				<div id="calendar-bottom">
+					<p id="calendar-bottom-text">
+						<span id="time-day"></span>
+						<span id="time-dow"></span>
+					</p>
+				</div>
+			</div>
+
+			<div id="clock">
+				<p id="clock-display">
+					<span id="clock-hour" class="box">00</span>
+					:
+					<span id="clock-minute" class="box">00</span>
+					:
+					<span id="clock-second" class="box">00</span>
+				</p>
+			</div>
 		</div>
 
 		<script src="../font.js"></script>

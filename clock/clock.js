@@ -17,7 +17,7 @@ function updateTimeDisplay() {
 	const time = getCurrentTime();
 	const timeWeekDay = time.toLocaleDateString("en-US", { weekday: "long" });
 	const timeDay = time.toLocaleDateString("en-US", { day: "numeric" });
-	const timeMonth = time.toLocaleDateString("en-US", { month: "long" });
+	const timeMonth = time.toLocaleDateString("en-US", { month: "short" });
 	const timeYear = time.toLocaleDateString("en-US", { year: "numeric" });
 
 	const timeHour = ("0" + time.getHours()).slice(-2);
@@ -29,9 +29,9 @@ function updateTimeDisplay() {
 	document.getElementById("time-month").innerHTML = timeMonth;
 	document.getElementById("time-year").innerHTML = timeYear;
 
-	document.getElementById("clock-hour").innerHTML = timeHour;
-	document.getElementById("clock-minute").innerHTML = timeMinute;
-	document.getElementById("clock-second").innerHTML = timeSecond;
+	// document.getElementById("clock-hour").innerHTML = timeHour;
+	// document.getElementById("clock-minute").innerHTML = timeMinute;
+	// document.getElementById("clock-second").innerHTML = timeSecond;
 }
 
 setInterval(updateTimeDisplay, 0);

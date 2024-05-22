@@ -159,26 +159,73 @@ button {
 }
 
 #clock-display {
+	display: flex;
+	gap: 0.2ch;
 	font-family: "Iosevka Regular" !important;
 	font-size: 1.5em;
 }
 
-#clock {
+#time-container {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%);
-	gap: 20px;
-	flex-direction: column;
+	gap: 10vw;
 	font-size: 4vw;
-	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#clock p {
+#time-container {
+	width: fit-content;
+}
+
+#calendar {
+	display: flex;
+	width: 30vw;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+#calendar-top {
+	border: 0.5vw solid var(--wsa-blue);
+	color: var(--wsa-blue);
+	padding: 10px;
+	width: 100%;
+	border-radius: 2vw 2vw 0 0;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+#calendar-top-text,
+#calendar-bottom-text {
 	margin: 0;
+}
+
+#calendar-bottom-text {
+	display: flex;
+	flex-direction: column;
+}
+
+#time-day {
+	font-size: 1.2em;
+}
+
+#time-dow {
+	font-size: 0.8em;
+}
+
+#calendar-bottom {
+	border: 0.5vw solid var(--wsa-blue);
+	background-color: var(--wsa-blue);
+	color: var(--white);
+	padding: 10px;
+	width: 100%;
+	border-radius: 0 0 2vw 2vw;
+	box-sizing: border-box;
 }
 
 section {
