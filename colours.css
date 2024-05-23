@@ -1,0 +1,43 @@
+#colour-matrix {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+    margin: 0 auto;
+}
+
+.colour-header {
+    text-align: center;
+}
+
+.colour-name {
+	font-size: 1.1em;
+	transition: 0.2s;
+}
+
+.colour-code {
+	font-size: 0.8em;
+	transition: 0.2s;
+}
+
+#colour-matrix div {
+	width: 200px;
+	height: 100px;
+	flex-shrink: 1;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+	outline: 0 solid var(--wsa-blue);
+}
+
+#colour-matrix div:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	z-index: 999;
+}
+
+#colour-matrix div p {
+	margin: 0;
+}

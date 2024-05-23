@@ -6,6 +6,7 @@
 		<title>Designing an Effective Flag</title>
 
 		<link rel="stylesheet" href="../../style.css" />
+		<link rel="stylesheet" href="../../colours.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,91 +15,7 @@
 		/>
 
 		<style>
-			#colour-matrix {
-				display: flex;
-				flex-wrap: wrap;
-				width: 100%;
-			}
 
-			.colour-name {
-				font-size: 1.1em;
-				transition: 0.2s;
-			}
-
-			.colour-code {
-				font-size: 0.8em;
-				transition: 0.2s;
-			}
-
-			#colour-matrix div {
-				width: 200px;
-				height: 100px;
-				flex-shrink: 1;
-				flex-grow: 1;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				transition: 0.2s;
-				outline: 0 solid var(--wsa-blue);
-			}
-
-			#colour-matrix div:hover {
-				cursor: pointer;
-				z-index: 999;
-			}
-
-			#colour-matrix div:hover .colour-code {
-				font-size: 1em;
-			}
-
-			#colour-matrix div:hover .colour-name {
-				font-size: 1em;
-			}
-
-			#colour-matrix div p {
-				margin: 0;
-			}
-
-			#cm-red {
-				background-color: #cf1b2b;
-				color: var(--white);
-			}
-
-			#cm-green {
-				background-color: #068241;
-				color: var(--white);
-			}
-
-			#cm-blue {
-				background-color: #00247d;
-				color: var(--white);
-			}
-
-			#cm-light-blue {
-				background-color: #265fb5;
-				color: var(--white);
-			}
-
-			#cm-yellow {
-				background-color: #ffc726;
-				color: var(--black);
-			}
-
-			#cm-gold {
-				background-color: #f77f00;
-				color: var(--black);
-			}
-
-			#cm-black {
-				background-color: #141414;
-				color: var(--white);
-			}
-
-			#cm-white {
-				background-color: #eeeeee;
-				color: var(--black);
-			}
 		</style>
 	</head>
 	<body>
@@ -164,46 +81,53 @@
 				ensure that we can match them as closely as possible when we create the
 				custom emojis.
 			</p>
-			<p>
-				Here are some colours you might want to implement into your design:
-			</p>
+			<p>Here are some colours you might want to implement into your design:</p>
 			<div id="colour-matrix">
-				<div id="cm-red">
+				<div>
 					<span class="colour-name">Cardinal</span>
 					<span class="colour-code">#cf1b2b</span>
 				</div>
-				<div id="cm-white">
+				<div>
 					<span class="colour-name">Gallery</span>
 					<span class="colour-code">#eeeeee</span>
 				</div>
-				<div id="cm-blue">
+				<div>
 					<span class="colour-name">Resolution Blue</span>
 					<span class="colour-code">#00247d</span>
 				</div>
-				<div id="cm-light-blue">
+				<div>
 					<span class="colour-name">Cerulean Blue</span>
 					<span class="colour-code">#265fb5</span>
 				</div>
-				<div id="cm-yellow">
+				<div>
 					<span class="colour-name">Lightning Yellow</span>
 					<span class="colour-code">#ffc726</span>
 				</div>
-				<div id="cm-gold">
+				<div>
 					<span class="colour-name">Gold Drop</span>
 					<span class="colour-code">#f77f00</span>
 				</div>
-				<div id="cm-green">
+				<div>
 					<span class="colour-name">Green Haze</span>
 					<span class="colour-code">#00a651</span>
 				</div>
-				<div id="cm-black">
+				<div>
 					<span class="colour-name">Cod Grey</span>
 					<span class="colour-code">#141414</span>
 				</div>
 			</div>
 
+			<p>Click on any colour card to copy its colour code to your clipboard.</p>
 			<p>
-				Click on any colour card to copy its colour code to your clipboard.
+				We also have an
+				<a
+					href="../../resources/colours/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					extended colour palette
+				</a>
+				that you may want to take a look at.
 			</p>
 		</section>
 
@@ -229,6 +153,6 @@
 			</p>
 		</section>
 
-		<script src="../../flags.js"></script>
+		<script src="../../colours.js"></script>
 	</body>
 </html>
