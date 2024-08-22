@@ -4,8 +4,8 @@
 }
 
 @font-face {
-	font-family: "Iosevka Regular";
-	src: url("assets/fonts/Iosevka-Regular.ttf") format("truetype");
+	font-family: "Iosevka Extended";
+	src: url("assets/fonts/Iosevka-Extended.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 :root {
 	--wsa-blue: #0b3d91;
 	--white: #fcfcfc;
-	--body-font: "Iosevka Regular", monospace;
+	--body-font: "Iosevka Extended", monospace;
 }
 
 body {
@@ -160,7 +160,7 @@ button {
 #clock-display {
 	display: flex;
 	gap: 0.2ch;
-	font-family: "Iosevka Regular" !important;
+	font-family: "Iosevka Extended" !important;
 	font-size: 1.5em;
 }
 
