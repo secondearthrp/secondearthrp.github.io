@@ -29,8 +29,8 @@ function updateTimeDisplay() {
 	document.getElementById("time-month").innerHTML = timeMonth;
 	document.getElementById("time-year").innerHTML = timeYear;
 
-	// document.getElementById("clock-hour").innerHTML = timeHour;
-	// document.getElementById("clock-minute").innerHTML = timeMinute;
+	document.getElementById("clock-hour").innerHTML = timeHour;
+	document.getElementById("clock-minute").innerHTML = timeMinute;
 	// document.getElementById("clock-second").innerHTML = timeSecond;
 }
 

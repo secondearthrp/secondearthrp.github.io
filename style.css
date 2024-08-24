@@ -159,6 +159,7 @@ button {
 
 #clock-display {
 	display: flex;
+	margin: 0;
 	gap: 0.2ch;
 	font-family: "Iosevka Extended" !important;
 	font-size: 1.5em;
@@ -166,14 +167,12 @@ button {
 
 #time-container {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%);
-	gap: 10vw;
-	font-size: 4vw;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	gap: 20px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -184,7 +183,8 @@ button {
 
 #calendar {
 	display: flex;
-	width: 30vw;
+	width: 200px;
+	height: 160px;
 	flex-direction: column;
 	box-sizing: border-box;
 }
@@ -194,6 +194,10 @@ button {
 	color: var(--wsa-blue);
 	padding: 10px;
 	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 2vw 2vw 0 0;
 	text-transform: uppercase;
 	box-sizing: border-box;
@@ -223,6 +227,10 @@ button {
 	color: var(--white);
 	padding: 10px;
 	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 0 0 2vw 2vw;
 	box-sizing: border-box;
 }
